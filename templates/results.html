@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diamond Price Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .result-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Diamond Price Result</h1>
+        <p>Carat Weight: {{ features[0] }}</p>
+        <p>Cut: {{ features[1] }}</p>
+        <p>Color: {{ features[2] }}</p>
+        <p>Clarity: {{ features[3] }}</p>
+        <p>Depth: {{ features[4] }}</p>
+        <p>Table: {{ features[5] }}</p>
+        <p>X: {{ features[6] }}</p>
+        <p>Y: {{ features[7] }}</p>
+        <p>Z: {{ features[8] }}</p>
+        <p class="price">Price: ${{ price }}</p>
+    </div>
+</body>
+</html>
